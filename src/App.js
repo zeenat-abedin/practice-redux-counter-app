@@ -1,11 +1,21 @@
 import React from 'react'
+import { Provider } from 'react-redux'
+import { configureStore } from '@reduxjs/toolkit'
+
+import { counterReducer } from './redux/counterReducer'
 import Counter from './Counter'
+
+const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  } 
+})
 
 function App() {
   return (
-    <div>
+    <Provider  store={store}>
       <Counter/>
-    </div>
+    </Provider>
   )
 }
 
