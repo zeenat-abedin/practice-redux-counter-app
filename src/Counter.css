@@ -8,3 +8,31 @@
 .counter{
     display: flex;  
 }
+
+.increment{
+  background-color: green;
+}
+
+.increment:hover{
+  background-color: rgb(5, 50, 5);
+}
+
+.decrement{
+  background-color: red;
+}
+
+.decrement:hover{
+  background-color: rgb(139, 0, 0);
+}
+
+.increment, .decrement{
+  border: none;
+  height: 30px;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.counter span{
+  font-size: 25px;
+}
